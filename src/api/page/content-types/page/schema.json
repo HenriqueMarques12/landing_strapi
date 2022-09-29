@@ -15,9 +15,7 @@
     "title": {
       "type": "string",
       "required": true,
-      "unique": true,
-      "maxLength": 255,
-      "minLength": 5
+      "unique": true
     },
     "slug": {
       "type": "uid",
@@ -27,20 +25,9 @@
     "sections": {
       "type": "dynamiczone",
       "components": [
-        "section.section-content",
-        "section.section-grid",
         "section.section-two-columns"
       ],
       "required": true
-    },
-    "footer_text": {
-      "type": "richtext",
-      "required": true
-    },
-    "menu": {
-      "type": "component",
-      "repeatable": false,
-      "component": "menu.menu"
     }
   }
 }
